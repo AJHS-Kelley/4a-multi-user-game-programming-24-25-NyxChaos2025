@@ -8,9 +8,6 @@ using System.Collections;
 class Collections {
   static void Main() { // DO NOT DELETE!
 
-
-
-
 /*
 In C# an collection is an ARRAY
 -- Each ITEM IN THE ARRAY IS AN ELEMENT 
@@ -86,8 +83,38 @@ In C# an collection is an ARRAY
   Console.WriteLine("The MAXIUM value for intArr is: " + intArr.Max());
   Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
 
+  // Arraylist --> Basically an array you can add/remove elements from.
+  var exampleArrlist = new Arraylist(); // create an new Arraylist.
+  // Adding elements to an ArrayList use .Add()
+  exampleArrList.Add(5);
+  exampleArrList.Add("Big Hero 6")
+  exampleArrList.Add(false);
+  exampleArrList.Add(1.25D);  
 
-    } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT
+  // Create ArrayList with Vslues
+  vae exampleList2 = new arrayList()
+  {
+    -10, "Last name", "Purple", false, 25.25D, 195000, 0.0D
+    };
+    
+    Console.WriteLine(exampleArrayList[2]);
+    Console.WriteLine(exampleArrayList2[5]);
+
+    // Inserting to a specific position in the ArrayList
+    // Use .Insert(index, value)
+    exampleArrayList.Insert(3, "ogres are like onions.\n");
+    exampleArrayList.Insert(0,-99);
+
+    // .Remove(value) removes the FIRST OCCURENCE of the item from the ArrayList.
+    var newList = new ArrayList()
+    {
+      -17, 17, 18, -45, -17, 45, 33, -45, 40
+    };
+    Console.WriteLine(newList[0]);
+    newList.Remove(-17)
+    Console.WriteLine(newList[0]);
+
+     // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LRFT MARGIN
 
   }     //DO NOT TOUCH
