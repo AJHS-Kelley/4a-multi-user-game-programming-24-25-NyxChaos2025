@@ -114,6 +114,37 @@ In C# an collection is an ARRAY
     newList.Remove(-17)
     Console.WriteLine(newList[0]);
 
+    // Deleting based on index number.
+    // .RemoveAt(value) --> deletes the item at the specified index
+    newList.RemoveAT(4);
+
+    // Delete the First Item
+    newList.RemoveAT(0);
+
+    // Delete the Last Item
+    newList.RemoveAT(newList.Length -1);
+
+    // Remove an entire range of elements.
+    // .RemoveRange(firstIndex, LastIndex)
+    newList.RemoveRange(3,8)
+    
+    // Shortcut to Delete from one item hrough end of list.
+    newList.RemoveRange(4, newList.Length -1);
+
+    // Does the ArrayList contain a certain value.
+    // .Contains(value) returns true if the list has that value, false otherwise.
+    var playerInventory = new ArrayList()
+    {
+     "Sword", "Shield", "Bazooka", "1-Up Power-Up", "Death Notebook","Potato"
+    };
+
+    Console.WriteLine(playerInventory.Contains("Fishing Pole"));
+    Console.WriteLine(playerInventory.Contains("Sword"));
+
+    if (playerInventory.Contains("Blue Key"))
+    {
+      // Do Something
+    }
      // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LRFT MARGIN
 
